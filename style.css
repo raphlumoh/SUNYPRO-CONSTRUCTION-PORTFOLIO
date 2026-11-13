@@ -27,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0px 0 0;
+    padding: 0 30px 0 0;
     background: #101b2c;
     color: white;
     min-height: 90px;
@@ -81,18 +81,39 @@ nav a:hover {
 }
 
 /* SLIDING BACKGROUND IMAGES */
+/* HERO SECTION */
 
-.hero::before {
-    content: "";
+.hero {
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+
+    background: #101b2c;
+    color: white;
+}
+
+/* HERO BACKGROUND SLIDES */
+
+.hero-bg {
     position: absolute;
     inset: 0;
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
-    animation: heroSlide 18s infinite;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
 
-    z-index: 0;
+/* ACTIVE SLIDE */
+
+.hero-bg.active {
+    opacity: 1;
 }
 
 /* DARK OVERLAY */
@@ -103,54 +124,17 @@ nav a:hover {
     inset: 0;
 
     background: rgba(5, 15, 30, 0.65);
-
     z-index: 1;
+    pointer-events: none;
 }
 
-/* HERO TEXT */
+/* HERO CONTENT */
 
 .hero-content {
-    max-width: 650px;
     position: relative;
     z-index: 2;
+    max-width: 650px;
 }
-
-/* BACKGROUND SLIDE ANIMATION */
-
-
-@keyframes heroSlide {
-
-    0%, 18% {
-        background-image: url("building-1.jpg");
-        transform: scale(1);
-    }
-
-    20%, 38% {
-        background-image: url("building-2.jpg");
-        transform: scale(1.05);
-    }
-
-    40%, 58% {
-        background-image: url("building-3.jpg");
-        transform: scale(1);
-    }
-
-    60%, 78% {
-        background-image: url("building-4.jpg");
-        transform: scale(1.05);
-    }
-
-    80%, 98% {
-        background-image: url("building-5.jpg");
-        transform: scale(1);
-    }
-
-    100% {
-        background-image: url("building-1.jpg");
-        transform: scale(1);
-    }
-}
-
 
 .hero-content {
     max-width: 650px;
@@ -585,7 +569,7 @@ footer p {
 .about-image {
     width: 100%;
     min-height: 480px;
-    background: url("building-7.jpg") center/cover no-repeat;
+    background: url("images/building-7.jpg") center/cover no-repeat;
     border-radius: 10px;
 }
 
