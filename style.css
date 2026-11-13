@@ -126,22 +126,22 @@ nav a:hover {
     }
 
     20%, 38% {
-        background-image: url("images/building-2.jpg");
+        background-image: url("building-2.jpg");
         transform: scale(1.05);
     }
 
     40%, 58% {
-        background-image: url("images/building-3.jpg");
+        background-image: url("building-3.jpg");
         transform: scale(1);
     }
 
     60%, 78% {
-        background-image: url("images/building-4.jpg");
+        background-image: url("building-4.jpg");
         transform: scale(1.05);
     }
 
     80%, 98% {
-        background-image: url("imagesbuilding-5.jpg");
+        background-image: url("building-5.jpg");
         transform: scale(1);
     }
 
@@ -585,7 +585,7 @@ footer p {
 .about-image {
     width: 100%;
     min-height: 480px;
-    background: url("images/building-7.jpg") center/cover no-repeat;
+    background: url("building-7.jpg") center/cover no-repeat;
     border-radius: 10px;
 }
 
