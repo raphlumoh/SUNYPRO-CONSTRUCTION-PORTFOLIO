@@ -4,56 +4,56 @@
 const galleryProjects = [
 
     {
-        image: "images/building-1.jpg",
+        image: "building-1.jpg",
         title: "Luxury Residential Building",
         category: "residential",
         description: "Residential Construction"
     },
 
     {
-        image: "images/building-11.jpg",
+        image: "building-11.jpg",
         title: "Modern Luxury Home",
         category: "residential",
         description: "Residential Construction"
     },
 
     {
-        image: "images/building-2.jpg",
+        image: "building-2.jpg",
         title: "Modern Office Complex",
         category: "commercial",
         description: "Commercial Construction"
     },
 
     {
-        image: "images/building-3.jpg",
+        image: "building-3.jpg",
         title: "Industrial Facility",
         category: "industrial",
         description: "Industrial Construction"
     },
 
     {
-        image: "images/building-4.jpg",
+        image: "building-4.jpg",
         title: "Modern Family Home",
         category: "residential",
         description: "Residential Construction"
     },
 
     {
-        image: "images/building-5.jpg",
+        image: "building-5.jpg",
         title: "Commercial Development",
         category: "commercial",
         description: "Commercial Construction"
     },
 
     {
-        image: "images/building-7.jpg",
+        image: "building-7.jpg",
         title: "Commercial Building",
         category: "commercial",
         description: "Commercial Construction"
     },
 
     {
-        image: "images/building-6.jpg",
+        image: "building-6.jpg",
         title: "Industrial Development",
         category: "industrial",
         description: "Industrial Construction"
@@ -297,16 +297,16 @@ lightboxImage.addEventListener("click", function(event) {
 /* HERO BACKGROUND SLIDESHOW */
 
 const heroImages = [
-    "images/logo-1.jpg",
-    "images/building-1.jpg",
-    "images/building-13.jpg",
-    "images/building-2.jpg",
-    "images/building-3.jpg",
-    "images/building-4.jpg",
-    "images/building-5.jpg",
-    "images/building-6.jpg",
-    "images/building-7.jpg",
-    "images/building-11.jpg"
+    "logo-1.jpg",
+    "building-1.jpg",
+    "building-13.jpg",
+    "building-2.jpg",
+    "building-3.jpg",
+    "building-4.jpg",
+    "building-5.jpg",
+    "building-6.jpg",
+    "building-7.jpg",
+    "building-11.jpg"
 
     // Add more images here
 ];
