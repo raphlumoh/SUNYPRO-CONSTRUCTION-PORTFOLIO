@@ -83,3 +83,61 @@ if (track && slides.length > 0 && nextBtn && prevBtn && dotsContainer) {
 
     startSlider();
 }
+
+/* HERO BACKGROUND SLIDESHOW */
+
+const heroImages = [
+    "images/logo-1.jpg",
+    "images/building-1.jpg",
+    "images/building-13.jpg",
+    "images/building-12.jpg",
+    "images/building-2.jpg",
+    "images/building-3.jpg",
+    "images/building-4.jpg",
+    "images/building-5.jpg",
+    "images/building-6.jpg",
+    "images/building-7.jpg",
+    "images/building-11.jpg"
+
+    // Add more images here
+];
+
+const heroSlides = document.querySelectorAll(".hero-bg");
+
+if (heroSlides.length === 2 && heroImages.length > 0) {
+
+    let currentImage = 0;
+    let activeSlide = 0;
+
+    heroSlides[0].style.backgroundImage =
+        `url("${heroImages[0]}")`;
+
+    heroSlides[0].classList.add("active");
+
+    heroSlides[1].classList.remove("active");
+
+    setInterval(() => {
+
+        currentImage =
+            (currentImage + 1) % heroImages.length;
+
+        const nextSlide = 1 - activeSlide;
+
+        const image = new Image();
+
+        image.onload = () => {
+
+            heroSlides[nextSlide].style.backgroundImage =
+                `url("${heroImages[currentImage]}")`;
+
+            heroSlides[nextSlide].classList.add("active");
+
+            heroSlides[activeSlide].classList.remove("active");
+
+            activeSlide = nextSlide;
+        };
+
+        image.src = heroImages[currentImage];
+
+    }, 5000);
+}
