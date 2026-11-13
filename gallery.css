@@ -71,87 +71,95 @@ nav a:hover {
     color: #d6a84b;
 }
 
+
 /* HERO SECTION */
 
 .hero {
     min-height: 450px;
-
-    background:
-    linear-gradient(rgba(5, 15, 30, 0.75),
-    rgba(5, 15, 30, 0.75)),
-    url("building1.jpg");
-
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
-    padding: 60px 8%;
+
+    padding: 80px 8%;
     color: white;
 }
 
+/* HERO BACKGROUND */
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+
+    z-index: 0;
+}
+
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 15, 30, 0.65);
+}
+
+.hero-bg.active {
+    opacity: 1;
+}
+
+/* HERO CONTENT */
+
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 650px;
 }
 
-.hero-content > p:first-child {
-    color: #d6a84b;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+/* BACKGROUND SLIDE ANIMATION */
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
+@keyframes heroSlide {
 
-.hero-content > p:nth-child(3) {
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
+    0%, 18% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-1.jpg");
+    }
 
-.hero-btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #d6a84b;
-    color: #101b2c;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: 0.3s;
-}
+    20%, 38% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-2.jpg");
+    }
 
-.hero-btn:hover {
-    background: white;
-}
+    40%, 58% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-3.jpg");
+    }
 
-/* GALLERY SECTION */
+    60%, 78% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-4.jpg");
+    }
 
-.gallery-section {
-    padding: 80px 8%;
-}
+    80%, 98% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-5.jpg");
+    }
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.section-heading > p {
-    color: #bd913d;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-}
-
-.section-heading h2 {
-    font-size: 36px;
-    color: #101b2c;
-    margin-bottom: 12px;
-}
-
-.section-heading span {
-    color: #777;
+    100% {
+        background-image:
+        linear-gradient(rgba(5,15,30,0.65), rgba(5,15,30,0.65)),
+        url("images/building-1.jpg");
+    }
 }
 
 /* FILTER BUTTONS */
