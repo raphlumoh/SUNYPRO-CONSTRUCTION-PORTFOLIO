@@ -70,28 +70,21 @@ nav a {
 nav a:hover {
     color: #d6a84b;
 }
+
+
 /* HERO SECTION */
 
-.hero-content {
+.hero {
+    min-height: 450px;
     position: relative;
-    z-index: 2;
-    max-width: 650px;
-}
-.hero-content > p:first-child {
-    color: #d6a84b;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-.hero-content > p:nth-child(3) {
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
+    overflow: hidden;
 
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+    color: white;
+}
 
 /* HERO BACKGROUND */
 
@@ -126,6 +119,20 @@ nav a:hover {
     position: relative;
     z-index: 2;
     max-width: 650px;
+}
+.hero-content > p:first-child {
+    color: #d6a84b;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content > p:nth-child(3) {
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 
 /* BACKGROUND SLIDE ANIMATION */
