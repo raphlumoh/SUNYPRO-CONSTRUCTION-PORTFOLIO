@@ -1,16 +1,16 @@
 /* FEATURED PROJECT IMAGES */
 
 const projectImages = [
-    "images/building-1.jpg",
-    "images/logo-1.jpg",
-    "images/building-13.jpg",
-    "images/building-12.jpg",
-    "images/building-2.jpg",
-    "images/building-3.jpg",
-    "images/building-4.jpg",
-    "images/building-5.jpg",
-    "images/building-7.jpg",
-    "images/building-11.jpg"
+    "building-1.jpg",
+    "logo-1.jpg",
+    "building-13.jpg",
+    "building-12.jpg",
+    "building-2.jpg",
+    "building-3.jpg",
+    "building-4.jpg",
+    "building-5.jpg",
+    "building-7.jpg",
+    "building-11.jpg"
 ];
 
 /* AUTOMATICALLY CREATE PROJECT SLIDES */
@@ -127,17 +127,17 @@ if (track && slides.length > 0 && nextBtn && prevBtn && dotsContainer) {
 /* HERO BACKGROUND SLIDESHOW */
 
 const heroImages = [
-    "images/logo-1.jpg",
-    "images/building-1.jpg",
-    "images/building-13.jpg",
-    "images/building-12.jpg",
-    "images/building-2.jpg",
-    "images/building-3.jpg",
-    "images/building-4.jpg",
-    "images/building-5.jpg",
-    "images/building-6.jpg",
-    "images/building-7.jpg",
-    "images/building-11.jpg"
+    "logo-1.jpg",
+    "building-1.jpg",
+    "building-13.jpg",
+    "building-12.jpg",
+    "building-2.jpg",
+    "building-3.jpg",
+    "building-4.jpg",
+    "building-5.jpg",
+    "building-6.jpg",
+    "building-7.jpg",
+    "building-11.jpg"
 
     // Add more images here
 ];
