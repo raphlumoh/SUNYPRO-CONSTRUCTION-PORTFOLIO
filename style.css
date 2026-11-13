@@ -569,7 +569,7 @@ footer p {
 .about-image {
     width: 100%;
     min-height: 480px;
-    background: url("images/building-7.jpg") center/cover no-repeat;
+    background: url("building-1.jpg") center/cover no-repeat;
     border-radius: 10px;
 }
 
