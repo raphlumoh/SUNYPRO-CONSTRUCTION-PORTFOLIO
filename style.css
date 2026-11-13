@@ -121,7 +121,7 @@ nav a:hover {
 @keyframes heroSlide {
 
     0%, 18% {
-        background-image: url("images/building-1.jpg");
+        background-image: url("building-1.jpg");
         transform: scale(1);
     }
 
@@ -141,12 +141,12 @@ nav a:hover {
     }
 
     80%, 98% {
-        background-image: url("images/building-5.jpg");
+        background-image: url("imagesbuilding-5.jpg");
         transform: scale(1);
     }
 
     100% {
-        background-image: url("images/building-1.jpg");
+        background-image: url("building-1.jpg");
         transform: scale(1);
     }
 }
